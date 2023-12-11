@@ -10,7 +10,7 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  playerSelection = playerSelection.toLowerCase();
+  playerSelection = (window.prompt('Please enter either rock, paper, or scissors.')).toLowerCase();
   computerSelection = computerSelection.toLowerCase();
 
   if (playerSelection === computerSelection) {
